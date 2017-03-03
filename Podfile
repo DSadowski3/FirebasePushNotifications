@@ -9,6 +9,7 @@ target 'FirebaseNotifications' do
  pod 'Firebase/Core'
 pod 'Firebase'
 pod 'Firebase/Database’
+pod ‘Firebase/Messaging’
 
   target 'FirebaseNotificationsTests' do
     inherit! :search_paths

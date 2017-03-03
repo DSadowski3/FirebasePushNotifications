@@ -16,7 +16,9 @@
 		87B0EA251E6A01DA0058CCE0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B0EA231E6A01DA0058CCE0 /* LaunchScreen.storyboard */; };
 		87B0EA301E6A01DA0058CCE0 /* FirebaseNotificationsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0EA2F1E6A01DA0058CCE0 /* FirebaseNotificationsTests.swift */; };
 		87B0EA3B1E6A01DA0058CCE0 /* FirebaseNotificationsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B0EA3A1E6A01DA0058CCE0 /* FirebaseNotificationsUITests.swift */; };
-		87B0EA491E6A03AA0058CCE0 /* GoogleService-Info-3.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87B0EA481E6A03AA0058CCE0 /* GoogleService-Info-3.plist */; };
+		87B0EA4F1E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87B0EA4E1E6A122B0058CCE0 /* GoogleService-Info.plist */; };
+		87B0EA501E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87B0EA4E1E6A122B0058CCE0 /* GoogleService-Info.plist */; };
+		87B0EA511E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 87B0EA4E1E6A122B0058CCE0 /* GoogleService-Info.plist */; };
 		C589FA39ADCCCF370920926D /* Pods_FirebaseNotificationsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40258AC807ECF3F32B4B2BB /* Pods_FirebaseNotificationsUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +58,8 @@
 		87B0EA361E6A01DA0058CCE0 /* FirebaseNotificationsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseNotificationsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B0EA3A1E6A01DA0058CCE0 /* FirebaseNotificationsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseNotificationsUITests.swift; sourceTree = "<group>"; };
 		87B0EA3C1E6A01DA0058CCE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		87B0EA481E6A03AA0058CCE0 /* GoogleService-Info-3.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-3.plist"; sourceTree = "<group>"; };
+		87B0EA4A1E6A0CB40058CCE0 /* FirebaseNotifications.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FirebaseNotifications.entitlements; sourceTree = "<group>"; };
+		87B0EA4E1E6A122B0058CCE0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		99AFFD3F1F574437B5BB2824 /* Pods_FirebaseNotifications.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseNotifications.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A8EADE7ADCF54D91DFC1219 /* Pods-FirebaseNotificationsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseNotificationsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseNotificationsTests/Pods-FirebaseNotificationsTests.release.xcconfig"; sourceTree = "<group>"; };
 		D40258AC807ECF3F32B4B2BB /* Pods_FirebaseNotificationsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseNotificationsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,13 +129,16 @@
 		87B0EA191E6A01DA0058CCE0 /* FirebaseNotifications */ = {
 			isa = PBXGroup;
 			children = (
+				87B0EA4D1E6A0D5A0058CCE0 /* Model */,
+				87B0EA4C1E6A0D500058CCE0 /* View */,
+				87B0EA4B1E6A0D480058CCE0 /* Controller */,
+				87B0EA4A1E6A0CB40058CCE0 /* FirebaseNotifications.entitlements */,
 				87B0EA1A1E6A01DA0058CCE0 /* AppDelegate.swift */,
-				87B0EA1C1E6A01DA0058CCE0 /* ViewController.swift */,
 				87B0EA1E1E6A01DA0058CCE0 /* Main.storyboard */,
 				87B0EA211E6A01DA0058CCE0 /* Assets.xcassets */,
 				87B0EA231E6A01DA0058CCE0 /* LaunchScreen.storyboard */,
 				87B0EA261E6A01DA0058CCE0 /* Info.plist */,
-				87B0EA481E6A03AA0058CCE0 /* GoogleService-Info-3.plist */,
+				87B0EA4E1E6A122B0058CCE0 /* GoogleService-Info.plist */,
 			);
 			path = FirebaseNotifications;
 			sourceTree = "<group>";
@@ -153,6 +159,28 @@
 				87B0EA3C1E6A01DA0058CCE0 /* Info.plist */,
 			);
 			path = FirebaseNotificationsUITests;
+			sourceTree = "<group>";
+		};
+		87B0EA4B1E6A0D480058CCE0 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				87B0EA1C1E6A01DA0058CCE0 /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		87B0EA4C1E6A0D500058CCE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		87B0EA4D1E6A0D5A0058CCE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 		C909FA65CEC80B2B0D88FBC7 /* Pods */ = {
@@ -246,6 +274,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 8P4X2M96MZ;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					87B0EA2A1E6A01DA0058CCE0 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -287,9 +320,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B0EA251E6A01DA0058CCE0 /* LaunchScreen.storyboard in Resources */,
+				87B0EA4F1E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */,
 				87B0EA221E6A01DA0058CCE0 /* Assets.xcassets in Resources */,
 				87B0EA201E6A01DA0058CCE0 /* Main.storyboard in Resources */,
-				87B0EA491E6A03AA0058CCE0 /* GoogleService-Info-3.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +330,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B0EA501E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +338,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87B0EA511E6A122B0058CCE0 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -591,8 +626,10 @@
 			baseConfigurationReference = 81FBE1A892A717C6D1DDDEB3 /* Pods-FirebaseNotifications.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseNotifications/FirebaseNotifications.entitlements;
 				DEVELOPMENT_TEAM = 8P4X2M96MZ;
 				INFOPLIST_FILE = FirebaseNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AOJI.FirebaseNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -605,8 +642,10 @@
 			baseConfigurationReference = 29EC48093119A685A4FB4E91 /* Pods-FirebaseNotifications.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FirebaseNotifications/FirebaseNotifications.entitlements;
 				DEVELOPMENT_TEAM = 8P4X2M96MZ;
 				INFOPLIST_FILE = FirebaseNotifications/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.AOJI.FirebaseNotifications;
 				PRODUCT_NAME = "$(TARGET_NAME)";
